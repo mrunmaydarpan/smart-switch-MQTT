@@ -13,7 +13,6 @@
 #include <ESP8266mDNS.h>
 #include <EspHtmlTemplateProcessor.h>
 
-
 byte mac[WL_MAC_ADDR_LENGTH];
 #define DEVICE_MANUFACTURER "MDtronix Lab"
 #if (module == 1)
