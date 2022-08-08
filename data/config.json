@@ -1,0 +1,8 @@
+{
+    "mqtt_server": "192.168.0.194",
+    "room name": "MDtronix-setup",
+    "switch 1": "switch 1",
+    "switch 2": "switch 2",
+    "switch 3": "switch 3",
+    "switch 4": "switch 4"
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<style>
+    input[type=text] {
+        background-color: whitesmoke;
+        color: #2b2a2a;
+    }
+
+    input[type='submit'] {
+        background-color: rgb(45, 108, 243);
+        width: 100px;
+        color: #ffffff;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    input {
+        width: 30%;
+        height: 44px;
+        border-radius: 4px;
+        margin: 10px auto;
+        font-size: 15px;
+    }
+
+    input {
+        border: 0;
+        padding: 0 15px
+    }
+
+    body {
+        text-align: center;
+        font-family: verdana, sans-serif;
+        border-radius: 5px;
+        background-color: rgb(224, 211, 211);
+        color: rgb(0, 0, 0);
+        padding: 20px;
+    }
+
+    div {
+        border-radius: 5px;
+        background-color: rgb(23, 23, 23);
+        color: #ffffff;
+        padding: 20px;
+    }
+</style>
+
+<head>
+    <title>MDtronix Smart Swtich</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>MDtronix Smart Swtich</h1>
+    <div>
+        <form action="/save">
+            <br><br>
+            <label>HA Server</label><br>
+            <input type="text" name="mqtt" maxlength="20" value={{set_server}}><br>
+            <br><label>Room Name</label><br>
+            <input type="text" name="room" maxlength="20" value={{device_name}}><br>
+            {{switch_set}}
+            <!-- <br><br><label>Switch 1</label><br>
+            <input type="text" name="Switch 1 Name" maxlength="20" value={{s1_name}}><br>
+            <br><br><label>Switch 2</label><br>
+            <input type="text" name="Switch 2 Name" maxlength="20" value={{s2_name}}><br>
+            <br><br><label>Switch 3</label><br>
+            <input type="text" name="Switch 3 Name" maxlength="20" value={{s3_name}}><br>
+            <br><br><label>Switch 4</label><br>
+            <input type="text" name="Switch 4 Name" maxlength="20" value={{s4_name}}><br> -->
+            <br>
+            <input type="submit" value="Save">
+        </form>
+    </div>
+</body>
+<br>
+
+<body>
+    <div>
+        <form action="/update"> <input type='submit' value='Update'>
+        </form>
+    </div>
+</body>
+
+</html>
